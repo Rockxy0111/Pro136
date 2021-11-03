@@ -13,7 +13,7 @@ def index():
 @app.route("/star")
 def star():
     url = request.url
-    url = url.split('/')[3].split('=')[1]
+    url = url.split('/')[2].split('=')[0]
     url = url.replace('%20', ' ')
     url = url.replace('%5B', '[')
     url = url.replace('%5D', ']')
